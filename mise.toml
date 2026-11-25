@@ -1,0 +1,46 @@
+[settings.task]
+run_auto_install = false
+
+[tasks.plan]
+description = "Preview configuration changes without writing to your home directory"
+run = "bash scripts/apply.sh"
+
+[tasks.apply]
+description = "Install configuration copies, backing up existing files"
+run = "bash scripts/apply.sh --apply"
+
+[tasks.packages]
+description = "Install the curated Homebrew packages and apps without upgrading existing ones"
+run = "brew bundle install --file Brewfile --no-upgrade"
+
+[tasks.bootstrap]
+description = "Install packages, shell framework, configuration, and runtimes"
+run = "bash scripts/bootstrap.sh"
+
+[tasks.macos]
+description = "Preview the captured macOS preferences"
+run = "bash scripts/macos.sh"
+
+[tasks."macos:apply"]
+description = "Back up and apply the captured macOS preferences"
+run = "bash scripts/macos.sh --apply"
+
+[tasks."agents:sync"]
+description = "Sync the live, machine-local agent configuration"
+run = "agents sync --global"
+
+[tasks."agents:check"]
+description = "Check the live agent configuration for drift"
+run = "agents sync --global --check"
+
+[tasks.skills]
+description = "Interactively reinstall public skills from their upstream sources"
+run = [
+  "npx --yes skills add mattpocock/skills --global --agent opencode",
+  "npx --yes skills add tt-a1i/archify --global --agent opencode",
+]
+
+[tasks.check]
+description = "Run offline safety and configuration checks"
+run = "node --test tests/check.test.mjs"
+tools = { node = "24.22.3" }

@@ -1,0 +1,5 @@
+# This file belongs at ~/.zshenv.local. Do not add literal credentials to Git.
+# Prefer secure sign-in or a secrets manager. For Executor, get a NEW connection
+# URL from the v2 app on this machine; never copy another machine's URL.
+
+# export EXECUTOR_MCP_URL='http://127.0.0.1:4312/mcp?connection=YOUR_CONNECTION'

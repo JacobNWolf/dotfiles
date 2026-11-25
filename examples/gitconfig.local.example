@@ -1,0 +1,7 @@
+[user]
+	name = YOUR NAME
+	email = YOUR VERIFIED GIT EMAIL
+
+# Keep employer identity scoped to the work checkout directory.
+# [includeIf "gitdir:~/work/"]
+# 	path = ~/.gitconfig.work

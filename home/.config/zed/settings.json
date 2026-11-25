@@ -1,0 +1,208 @@
+{
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": { "dock": "left" },
+  "outline_panel": { "dock": "left" },
+  "collaboration_panel": { "dock": "left" },
+  "git_panel": { "dock": "left" },
+  "agent": {
+    "threads_sidebar": { "position": "right" },
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "gpt-6-luna",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-opus-5",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "agent_servers": {
+    "opencode": {
+      "default_config_options": {
+        "effort": "high",
+        "mode": "build",
+        "model": "openai/gpt-6-luna"
+      },
+      "type": "registry"
+    }
+  },
+  "file_types": {
+    "grit": ["*.grit"],
+    "yaml": ["*.yml", "*.yaml"]
+  },
+  "auto_indent_on_paste": true,
+  "wrap_guides": [120],
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Bearded Icon Theme"
+  },
+  "auto_update_extensions": {
+    "haml": false,
+    "anysphere-theme": false
+  },
+  "auto_install_extensions": {
+    "anysphere-theme": true,
+    "bearded-icon-theme": true,
+    "biome": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "git-firefly": true,
+    "haml": true,
+    "html": true,
+    "lua": true,
+    "make": true,
+    "mermaid": true,
+    "oxc": true,
+    "proto": true,
+    "ruby": true,
+    "scheme": true,
+    "scss": true,
+    "sql": true,
+    "stylelint": true,
+    "toml": true,
+    "tsgo": true,
+    "xml": true
+  },
+  "telemetry": { "metrics": false },
+  "vim_mode": false,
+  "base_keymap": "Cursor",
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_weight": 400,
+  "ui_font_size": 12,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 13,
+  "buffer_font_weight": 400,
+  "buffer_line_height": "standard",
+  "terminal": {
+    "font_family": "JetBrains Mono",
+    "font_size": 13,
+    "line_height": "standard"
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Anysphere Theme"
+  },
+  "show_wrap_guides": true,
+  "preferred_line_length": 120,
+  "soft_wrap": "prefer_line",
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph", "rubocop", "!sorbet", "!kanayago", "!steep", "..."]
+    },
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp", "..."]
+    },
+    "JS+ERB": { "language_servers": ["ruby-lsp", "..."] },
+    "YAML+ERB": { "language_servers": ["ruby-lsp", "..."] },
+    "JavaScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TypeScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TSX": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JSON": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "YAML": { "formatter": "language_server" }
+  },
+  "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "todoKeyword",
+        "foreground_color": "#FF8C00",
+        "background_color": "#2B1700",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "fixmeKeyword",
+        "foreground_color": "#FF2D55",
+        "background_color": "#2B0011",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "hackKeyword",
+        "foreground_color": "#FFD60A",
+        "background_color": "#272100",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "noteKeyword",
+        "foreground_color": "#0A84FF",
+        "background_color": "#001B2B",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "infoKeyword",
+        "foreground_color": "#0A84FF",
+        "background_color": "#001B2B",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "warnKeyword",
+        "foreground_color": "#FF9F0A",
+        "background_color": "#271B00",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "warningKeyword",
+        "foreground_color": "#FF9F0A",
+        "background_color": "#271B00",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "bugKeyword",
+        "foreground_color": "#FF453A",
+        "background_color": "#2B0A00",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "xxxKeyword",
+        "foreground_color": "#BF5AF2",
+        "background_color": "#1B0029",
+        "font_weight": "bold"
+      },
+      {
+        "token_type": "deprecatedKeyword",
+        "foreground_color": "#98989D",
+        "background_color": "#1A1A1A",
+        "font_weight": "bold"
+      }
+    ]
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": { "importModuleSpecifier": "non-relative" }
+        }
+      }
+    }
+  }
+}

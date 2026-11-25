@@ -1,0 +1,6 @@
+# This file belongs at ~/.zshrc.local, not in the public repo.
+# Keep work-only aliases, AWS_PROFILE selections, KUBECONFIG paths, and
+# project-specific environment variables here.
+
+# alias sso='aws sso login --sso-session YOUR_SESSION'
+# alias k=kubectl

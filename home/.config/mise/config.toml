@@ -1,0 +1,14 @@
+[tools]
+node = "24.22.3"
+pnpm = "11.1.0"
+bun = "1.4.0"
+ruby = "3.4.1"
+go = "1.24.3"
+rust = "1.98.1"
+"npm:@agents-dev/cli" = "0.9.4"
+"npm:@opencode/browse" = "0.1.5"
+"npm:@opencode/cli" = "2.4.1"
+"npm:executor" = "2.0.0-beta.41"
+
+[settings.ruby]
+compile = false

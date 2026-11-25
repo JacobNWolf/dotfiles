@@ -1,0 +1,23 @@
+[core]
+	pager = delta
+	excludesfile = ~/.config/git/ignore
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+[merge]
+	conflictstyle = zdiff3
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[include]
+	path = ~/.gitconfig.local

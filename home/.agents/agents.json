@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 4,
+  "instructions": {
+    "path": "AGENTS.md"
+  },
+  "integrations": {
+    "enabled": ["opencode"]
+  },
+  "syncMode": "source-only",
+  "mcp": {
+    "servers": {
+      "browse": {
+        "transport": "stdio",
+        "enabled": false,
+        "targets": ["opencode"],
+        "command": "browse",
+        "args": ["mcp"]
+      },
+      "cua-driver": {
+        "transport": "stdio",
+        "enabled": false,
+        "targets": ["opencode"],
+        "command": "cua-driver",
+        "args": ["mcp"]
+      },
+      "openpets": {
+        "transport": "stdio",
+        "enabled": false,
+        "targets": ["opencode"],
+        "command": "npx",
+        "args": ["--yes", "@open-pets/mcp@4.1.0"]
+      },
+      "executor": {
+        "transport": "http",
+        "enabled": false,
+        "targets": ["opencode"],
+        "url": "${EXECUTOR_MCP_URL}"
+      }
+    }
+  }
+}

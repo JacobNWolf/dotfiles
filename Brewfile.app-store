@@ -1,0 +1,4 @@
+# Sign into the App Store and purchase these apps before running this file.
+mas "Velja", id: 1607635845
+mas "Magnet", id: 441258766
+mas "RunCat Neo", id: 6757801838

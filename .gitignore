@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.local
+*.local.*
+!*.local.example
+*.bak
+*.backup
+**/local.json
+**/auth.json
+**/.agents/generated/
+**/.agents/backups/
+**/node_modules/
+.mise/
+private/
+backups/

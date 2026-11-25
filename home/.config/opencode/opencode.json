@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "update": "auto",
+  "plugins": [
+    "@warp-dot-dev/opencode-warp@0.2.0",
+    "@jacobwolf/opencode-subagent-router@0.5.0",
+    "@open-pets/opencode@4.1.0"
+  ],
+  "policies": [
+    {
+      "action": "provider.use",
+      "resource": "opencode",
+      "effect": "deny"
+    }
+  ],
+  "instructions": [
+    "~/.agents/rules/code-comments.md",
+    "~/.config/opencode/openpets.md"
+  ],
+  "mcp": {
+    "servers": {}
+  }
+}
