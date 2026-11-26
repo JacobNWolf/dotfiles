@@ -26,6 +26,9 @@ brew bundle install --file "$root/Brewfile" --no-upgrade
 if [[ ! -e "$HOME/.oh-my-zsh" && ! -L "$HOME/.oh-my-zsh" ]]; then
   git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git "$HOME/.oh-my-zsh"
 fi
+if [[ ! -x "$HOME/.local/bin/cua-driver" ]] && ! command -v cua-driver >/dev/null 2>&1; then
+  curl -fsSL https://cua.ai/driver/install.sh | bash -s -- --no-modify-path --no-connect --no-test
+fi
 bash scripts/apply.sh --apply
 mise -C "$HOME" install
 mise -C "$HOME" exec -- agents sync --global

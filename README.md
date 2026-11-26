@@ -176,7 +176,7 @@ All MCP entries start **disabled**. Installing a tool is not consent to browser 
 | OpenCode | Authenticate providers in its UI; verify provider access and Zed's retained model choices |
 | Browse | Install the [official browser extension and pair it](https://github.com/anomalyco/browse); the CLI is installed by mise |
 | Executor | Install the v2 beta desktop app from your trusted channel, create a new MCP connection, and configure `EXECUTOR_MCP_URL` locally |
-| Cua Driver | Install from [the official project](https://github.com/trycua/cua), make `cua-driver` available on PATH, and approve Accessibility/Screen Recording yourself |
+| Cua Driver | Installed into `~/.local/bin` by bootstrap (from [trycua/cua](https://github.com/trycua/cua)); approve Accessibility/Screen Recording yourself |
 | OpenPets | Install and launch the [Apple Silicon desktop release](https://github.com/OpenPetsHQ/openpets/releases/latest); its stdio server uses the pinned npm package |
 | T3 Code | Choose/authenticate a backend and install its Codex or Claude CLI if required |
 
