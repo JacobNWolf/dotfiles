@@ -114,7 +114,7 @@ test("macOS preview never calls defaults; apply backs up only selected values", 
 
 test("version and consent guardrails survive future edits", () => {
   const runtimeConfig = readFileSync(join(root, "home/.config/mise/config.toml"), "utf8");
-  assert.ok(runtimeConfig.includes('"npm:@opencode/cli" = "2.4.1"'));
+  assert.match(runtimeConfig, /"npm:@opencode\/cli"\s*=\s*\{\s*version\s*=\s*"2\.4\.1",\s*allow_builds\s*=\s*\["@opencode\/cli"\]\s*\}/);
   assert.ok(!runtimeConfig.includes("npm:opencode-ai"));
   const taskConfig = readFileSync(join(root, "mise.toml"), "utf8");
   assert.match(taskConfig, /run_auto_install\s*=\s*false/);

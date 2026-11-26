@@ -7,8 +7,8 @@ go = "1.24.3"
 rust = "1.98.1"
 "npm:@agents-dev/cli" = "0.9.4"
 "npm:@opencode/browse" = "0.1.5"
-"npm:@opencode/cli" = "2.4.1"
-"npm:executor" = "2.0.0-beta.41"
+"npm:@opencode/cli" = { version = "2.4.1", allow_builds = ["@opencode/cli"] }
+"npm:executor" = { version = "2.0.0-beta.41", trust_policy_excludes = ["executor@2.0.0-beta.41"] }
 
 [settings.ruby]
 compile = false
